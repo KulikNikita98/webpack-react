@@ -1,7 +1,11 @@
+import { hot } from 'react-hot-loader/root';
 import * as React from 'react';
+import styles from './header.scss';
 
-export function Header() {
+export function HeaderComponent() {
   return (<header>
-    <h1> Hello, Webpack! </h1>
+    <h1 className={styles.example}> Hello, Webpack! </h1>
   </header>)
 }
+
+export const Header = hot(HeaderComponent)
